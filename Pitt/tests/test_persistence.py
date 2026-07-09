@@ -1,7 +1,13 @@
 import os
 import json
 from pathlib import Path
+import sys
 import pytest
+
+# Ensure repo root is on sys.path so Pitt package is importable during pytest
+REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from Pitt.pkg.predictor import persistence
 from schemas.schema import PredictionOutput
@@ -13,9 +19,15 @@ def make_sample_prediction(tmp_path):
         "ticker": "TEST",
         "generated_at": "2026-07-10T12:00:00",
         "id": "test-1",
-        "projection": [],
-        "valuation": {},
-        "evidence": [],
+        "projections": [],
+        "valuation": {
+            "valuation_date": "2026-07-10T12:00:00",
+            "dcf_value": "100.0",
+            "terminal_value": "10.0",
+        },
+        "evidence": [
+            {"source": "unit-test", "description": "synthetic"}
+        ],
     }
     return PredictionOutput.model_validate(d)
 
@@ -55,9 +67,15 @@ def test_size_limit_rejected(tmp_path):
         "ticker": "BIG",
         "generated_at": "2026-07-10T12:00:00",
         "id": "big-1",
-        "projection": [],
-        "valuation": {},
-        "evidence": [{"type": "text", "content": large_text}],
+        "projections": [],
+        "valuation": {
+            "valuation_date": "2026-07-10T12:00:00",
+            "dcf_value": "1.0",
+            "terminal_value": "0.1",
+        },
+        # Place the large payload into meta to inflate size while keeping evidence valid
+        "evidence": [{"source": "unit-test", "description": "big", "raw_ref": None}],
+        "meta": {"big_blob": large_text},
     }
     pred = PredictionOutput.model_validate(d)
 

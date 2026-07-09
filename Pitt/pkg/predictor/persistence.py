@@ -42,8 +42,16 @@ def persist_prediction(pred: PredictionOutput, base_dir: Optional[str] = None) -
     # Atomic write
     with open(tmp_path, "w", encoding="utf-8") as f:
         f.write(payload)
-
-    os.replace(tmp_path, final_path)
+    try:
+        os.replace(tmp_path, final_path)
+    except Exception:
+        # Attempt to remove the temporary file to avoid leaving partial data
+        try:
+            if tmp_path.exists():
+                tmp_path.unlink()
+        except Exception:
+            pass
+        raise
     return str(final_path)
 
 
