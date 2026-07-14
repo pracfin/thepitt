@@ -1,0 +1,12 @@
+{
+  "id": "ac1-06-20260714T154902Z",
+  "ticker": "SBIN",
+  "evidence": [
+    {
+      "source": "manual-sbin-q1",
+      "description": "SBIN quarterly disclosure summary",
+      "confidence": 0.82,
+      "retrieved_at": "2026-07-14T00:00:00Z"
+    }
+  ]
+}

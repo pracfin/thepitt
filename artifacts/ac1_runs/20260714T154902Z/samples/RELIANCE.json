@@ -1,0 +1,12 @@
+{
+  "id": "ac1-01-20260714T154902Z",
+  "ticker": "RELIANCE",
+  "evidence": [
+    {
+      "source": "manual-reliance-q1",
+      "description": "RELIANCE quarterly disclosure summary",
+      "confidence": 0.82,
+      "retrieved_at": "2026-07-14T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "ac1-04-20260714T154902Z",
+  "ticker": "HDFCBANK",
+  "evidence": [
+    {
+      "source": "manual-hdfcbank-q1",
+      "description": "HDFCBANK quarterly disclosure summary",
+      "confidence": 0.82,
+      "retrieved_at": "2026-07-14T00:00:00Z"
+    }
+  ]
+}

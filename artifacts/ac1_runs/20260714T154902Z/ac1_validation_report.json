@@ -1,0 +1,151 @@
+{
+  "run_timestamp_utc": "20260714T154902Z",
+  "objective": "AC1: Execute 10 ticker predictions and validate persisted PredictionOutput schema",
+  "total_tickers": 10,
+  "passed_count": 10,
+  "failed_count": 0,
+  "tickers": [
+    "RELIANCE",
+    "TCS",
+    "INFY",
+    "HDFCBANK",
+    "ICICIBANK",
+    "SBIN",
+    "ITC",
+    "LT",
+    "BAJFINANCE",
+    "ASIANPAINT"
+  ],
+  "results": [
+    {
+      "ticker": "RELIANCE",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/RELIANCE.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/RELIANCE/2026-07-14T15-49-02.850775+00-00_ac1-01-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    },
+    {
+      "ticker": "TCS",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/TCS.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/TCS/2026-07-14T15-49-02.853623+00-00_ac1-02-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    },
+    {
+      "ticker": "INFY",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/INFY.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/INFY/2026-07-14T15-49-02.854402+00-00_ac1-03-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    },
+    {
+      "ticker": "HDFCBANK",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/HDFCBANK.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/HDFCBANK/2026-07-14T15-49-02.855154+00-00_ac1-04-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    },
+    {
+      "ticker": "ICICIBANK",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/ICICIBANK.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/ICICIBANK/2026-07-14T15-49-02.855964+00-00_ac1-05-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    },
+    {
+      "ticker": "SBIN",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/SBIN.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/SBIN/2026-07-14T15-49-02.856671+00-00_ac1-06-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    },
+    {
+      "ticker": "ITC",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/ITC.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/ITC/2026-07-14T15-49-02.857352+00-00_ac1-07-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    },
+    {
+      "ticker": "LT",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/LT.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/LT/2026-07-14T15-49-02.858091+00-00_ac1-08-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    },
+    {
+      "ticker": "BAJFINANCE",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/BAJFINANCE.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/BAJFINANCE/2026-07-14T15-49-02.858800+00-00_ac1-09-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    },
+    {
+      "ticker": "ASIANPAINT",
+      "sample_file": "artifacts/ac1_runs/20260714T154902Z/samples/ASIANPAINT.json",
+      "cli_exit_code": 0,
+      "output_file": "database/predictions/ASIANPAINT/2026-07-14T15-49-02.859440+00-00_ac1-10-20260714T154902Z.json",
+      "validation": {
+        "ok": true,
+        "error": null,
+        "schema_version": "1.0.0",
+        "has_evidence": true,
+        "has_trace": true
+      }
+    }
+  ]
+}

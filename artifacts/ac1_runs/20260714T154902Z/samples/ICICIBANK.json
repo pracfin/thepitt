@@ -1,0 +1,12 @@
+{
+  "id": "ac1-05-20260714T154902Z",
+  "ticker": "ICICIBANK",
+  "evidence": [
+    {
+      "source": "manual-icicibank-q1",
+      "description": "ICICIBANK quarterly disclosure summary",
+      "confidence": 0.82,
+      "retrieved_at": "2026-07-14T00:00:00Z"
+    }
+  ]
+}

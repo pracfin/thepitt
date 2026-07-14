@@ -1,0 +1,12 @@
+{
+  "id": "ac1-10-20260714T154902Z",
+  "ticker": "ASIANPAINT",
+  "evidence": [
+    {
+      "source": "manual-asianpaint-q1",
+      "description": "ASIANPAINT quarterly disclosure summary",
+      "confidence": 0.82,
+      "retrieved_at": "2026-07-14T00:00:00Z"
+    }
+  ]
+}

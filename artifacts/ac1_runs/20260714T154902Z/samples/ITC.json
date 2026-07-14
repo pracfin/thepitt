@@ -1,0 +1,12 @@
+{
+  "id": "ac1-07-20260714T154902Z",
+  "ticker": "ITC",
+  "evidence": [
+    {
+      "source": "manual-itc-q1",
+      "description": "ITC quarterly disclosure summary",
+      "confidence": 0.82,
+      "retrieved_at": "2026-07-14T00:00:00Z"
+    }
+  ]
+}

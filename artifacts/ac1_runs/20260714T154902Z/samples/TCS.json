@@ -1,0 +1,12 @@
+{
+  "id": "ac1-02-20260714T154902Z",
+  "ticker": "TCS",
+  "evidence": [
+    {
+      "source": "manual-tcs-q1",
+      "description": "TCS quarterly disclosure summary",
+      "confidence": 0.82,
+      "retrieved_at": "2026-07-14T00:00:00Z"
+    }
+  ]
+}
