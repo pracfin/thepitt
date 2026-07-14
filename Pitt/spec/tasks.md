@@ -14,7 +14,7 @@ plan. It is intended as a developer checklist for implementation.
 
 - Task 3: Unit tests & test fixtures
   - Target: `Pitt/tests/*`
-  - Status: in-progress
+  - Status: done
 
 - Task 4: Projection utilities & Valuation skeleton
   - Target: `Pitt/pkg/predictor/projection.py`, `valuation.py`

@@ -1,0 +1,76 @@
+{
+  "id": "full-2026-07-02",
+  "ticker": "ACME",
+  "generated_at": "2026-07-02T11:30:00Z",
+  "projections": [
+    {
+      "name": "Revenue",
+      "currency": "USD",
+      "unit": "USD",
+      "entries": [
+        {"period": "2024", "value": "95.0", "growth_rate": "0.05"},
+        {"period": "2025", "value": "104.5", "growth_rate": "0.10"},
+        {"period": "2026", "value": "115.0", "growth_rate": "0.10"},
+        {"period": "2027", "value": "126.5", "growth_rate": "0.10"},
+        {"period": "2028", "value": "139.2", "growth_rate": "0.10"}
+      ]
+    },
+    {
+      "name": "EBITDA",
+      "currency": "USD",
+      "unit": "USD",
+      "entries": [
+        {"period": "2024", "value": "20.0", "growth_rate": "0.06"},
+        {"period": "2025", "value": "21.2", "growth_rate": "0.06"},
+        {"period": "2026", "value": "22.5", "growth_rate": "0.06"}
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "source": "SEC 10-K",
+      "description": "Historical revenue and margin trends",
+      "confidence": "0.9",
+      "retrieved_at": "2026-06-20T12:00:00Z"
+    },
+    {
+      "source": "Analyst note",
+      "description": "Analyst revises estimates upward after new product launch",
+      "confidence": "0.75",
+      "retrieved_at": "2026-07-01T09:30:00Z"
+    }
+  ],
+  "valuation": {
+    "valuation_date": "2026-07-02T11:00:00Z",
+    "dcf_value": "1450.0",
+    "terminal_value": "400.0",
+    "assumptions": {
+      "discount_rate": "0.095",
+      "terminal_growth": "0.025",
+      "explicit_period_years": 5
+    },
+    "sensitivities": [
+      {"name": "Base", "valuation_value": "1850.0", "note": "Base case"},
+      {"name": "Down -10% growth", "valuation_value": "1665.0", "note": "Growth reduced by 10%"},
+      {"name": "Higher discount 11%", "valuation_value": "1520.0", "note": "Discount rate bump"}
+    ]
+  },
+  "trace": [
+    {
+      "step": "fetch_financials",
+      "timestamp": "2026-07-02T10:40:00Z",
+      "duration_ms": 210,
+      "details": {"endpoint": "financials/v1/company/ACME"}
+    },
+    {
+      "step": "run_projection",
+      "timestamp": "2026-07-02T11:00:00Z",
+      "duration_ms": 480,
+      "details": {"method": "explicit_growth_curve"}
+    }
+  ],
+  "meta": {
+    "model_version": "v1.2",
+    "generated_by": "AutoValuator-CLI"
+  }
+}

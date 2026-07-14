@@ -1,0 +1,37 @@
+{
+  "id": "short-001",
+  "ticker": "ACME",
+  "generated_at": "2026-07-02T10:00:00Z",
+  "projections": [
+    {
+      "name": "Revenue",
+      "currency": "USD",
+      "unit": "USD",
+      "entries": [
+        {"period": "2026", "value": "100.0", "growth_rate": "0.10"},
+        {"period": "2027", "value": "110.0", "growth_rate": "0.10"}
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "source": "Company release",
+      "description": "Guidance raised for 2026",
+      "confidence": "0.8",
+      "retrieved_at": "2026-07-01T08:00:00Z"
+    }
+  ],
+  "valuation": {
+    "valuation_date": "2026-07-02T10:00:00Z",
+    "dcf_value": "900.0",
+    "terminal_value": "200.0",
+    "assumptions": {"discount_rate": "0.10", "terminal_growth": "0.02"},
+    "sensitivities": [
+      {"name": "Base", "valuation_value": "1100.0"},
+      {"name": "Down -10%", "valuation_value": "990.0"}
+    ]
+  },
+  "trace": [
+    {"step": "init", "timestamp": "2026-07-02T09:59:00Z", "duration_ms": 10}
+  ]
+}
