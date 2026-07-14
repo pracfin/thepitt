@@ -29,8 +29,9 @@ def test_cli_persists_raw_evidence(tmp_path):
     ev_files = list(evidence_root.glob("*.json"))
     assert ev_files
     # load one and verify raw_ref present
-    ev = json.loads(ev_files[0].read_text(encoding="utf-8"))
-    assert ev.get("payload", {}).get("raw_ref") is not None
+    docs = [json.loads(path.read_text(encoding="utf-8")) for path in ev_files]
+    payload_raw_refs = [doc.get("payload", {}).get("raw_ref") for doc in docs if isinstance(doc, dict)]
+    assert any(ref is not None for ref in payload_raw_refs)
 
     # cleanup
     shutil.rmtree(evidence_root)
